@@ -39,8 +39,6 @@ $calculate = function () {
 };
 
 ?>
-
-<!-- 結果表示 -->
 <div>
     <h1>計算結果</h1>
 
@@ -49,7 +47,6 @@ $calculate = function () {
             {{ $num1 }} {{ $symbol }} {{ $num2 }} = {{ $result }}
         </p>
     @else
-        {{-- エラーメッセージなどを表示 --}}
         <p>{{ $result }}</p>
     @endif
 </div>
