@@ -35,18 +35,16 @@ $calculate = function () {
 
         default:
             $this->result = '無効な演算子です';
+            $this->symbol = '?';
+            break;
     }
 };
 
 ?>
 <div>
     <h1>計算結果</h1>
+    <p>
+        {{ $num1 }} {{ $symbol }} {{ $num2 }} = {{ $result }}
+    </p>
 
-    @if (is_numeric($result))
-        <p>
-            {{ $num1 }} {{ $symbol }} {{ $num2 }} = {{ $result }}
-        </p>
-    @else
-        <p>{{ $result }}</p>
-    @endif
 </div>
